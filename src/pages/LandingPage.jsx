@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
 import Strength from "../components/strengths/Strength";
 import MissionStatement from "../components/MissionStatement";
