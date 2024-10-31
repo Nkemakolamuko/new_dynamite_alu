@@ -1,5 +1,4 @@
 import React from "react";
-import HeroSection from "../components/HeroSection";
 import Strength from "../components/strengths/Strength";
 import MissionStatement from "../components/MissionStatement";
 import NavHero from "../components/NavHero";
@@ -10,8 +9,6 @@ import Footer from "../components/Footer";
 const LandingPage = () => {
   return (
     <>
-      {/* <Navbar /> 
-     <HeroSection /> */}
       <NavHero />
       <Videos />
       <MissionStatement />
