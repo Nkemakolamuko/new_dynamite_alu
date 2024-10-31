@@ -1,6 +1,25 @@
 import React from "react";
 import Slider from "react-slick";
 import Title from "./Title";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+
+const NextArrow = ({ onClick }) => (
+  <div
+    className="absolute top-1/2 right-0 transform -translate-y-1/2 cursor-pointer text-yellow-500 hover:text-yellow-400"
+    onClick={onClick}
+  >
+    <FaArrowRight size={24} />
+  </div>
+);
+
+const PrevArrow = ({ onClick }) => (
+  <div
+    className="absolute top-1/2 left-0 transform z-10 -translate-y-1/2 cursor-pointer text-yellow-500 hover:text-yellow-400"
+    onClick={onClick}
+  >
+    <FaArrowLeft size={24} />
+  </div>
+);
 
 const Videos = () => {
   const challengeVideos = [
@@ -36,11 +55,12 @@ const Videos = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
   return (
-    <div className="bg-white/70 bg-opacity-70 block md:hidden text-center rounded-lg p-2 space-y-4 overflow-hidden">
+    <div className="bg-white/70 bg-opacity-70 block md:hidden pt-4 text-center rounded-lg p-2 space-y-4 overflow-x-hidden">
       <Title title="Challenge Videos" />
       <Slider {...sliderSettings}>
         {challengeVideos.map((video) => (

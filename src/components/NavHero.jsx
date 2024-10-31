@@ -221,7 +221,7 @@ const NavHero = () => {
       </div>
 
       {/* Bouncing Arrow */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce block md:hidden text-[#ac2f87]">
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce block md:hidden text-[#ac2f87]">
         <FaArrowDown className="w-8 h-8" />
       </div>
     </section>
