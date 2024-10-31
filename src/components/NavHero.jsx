@@ -145,8 +145,9 @@ const NavHero = () => {
         {/* Hero Section */}
         <div className="flex flex-col md:space-y-8 space-y-4">
           <p className="text-sm text-gray-300">E-Lab</p>
-          <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight">
-            DYNAMITE <br /> TEAM
+          <h1 className="text-6xl md:text-7xl font-bold text-white leading-tight">
+            TEAM <br />
+            DYNAMITE
           </h1>
           <p className="text-lg text-gray-300 max-w-md">
             A team of passionate, diverse, and multitalented people. Ready to
@@ -220,7 +221,7 @@ const NavHero = () => {
       </div>
 
       {/* Bouncing Arrow */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce block md:hidden text-[#ac2f87]">
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce block md:hidden text-[#ac2f87]">
         <FaArrowDown className="w-8 h-8" />
       </div>
     </section>

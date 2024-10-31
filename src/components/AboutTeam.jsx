@@ -190,7 +190,7 @@ const AboutTeam = () => {
             <button
               key={member.id}
               onClick={() => setCurrentMemberIndex(index)}
-              className={`w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden focus:outline-none ${
+              className={`w-8 h-8 md:w-24 md:h-24 rounded-full overflow-hidden focus:outline-none ${
                 currentMemberIndex === index
                   ? "ring-2 md:ring-4 ring-blue-500 md:w-28 md:h-28 transition-all duration-300"
                   : "ring-2 ring-transparent"

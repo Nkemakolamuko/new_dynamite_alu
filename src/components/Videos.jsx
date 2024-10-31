@@ -40,7 +40,7 @@ const Videos = () => {
   };
 
   return (
-    <div className="bg-white/70 bg-opacity-70 block md:hidden text-center rounded-lg p-2 space-y-4">
+    <div className="bg-white/70 bg-opacity-70 block md:hidden text-center rounded-lg p-2 space-y-4 overflow-hidden">
       <Title title="Challenge Videos" />
       <Slider {...sliderSettings}>
         {challengeVideos.map((video) => (

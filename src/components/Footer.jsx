@@ -10,14 +10,14 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white p-8">
-      <div className="mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <footer className="bg-gray-900 text-white md:p-8">
+      <div className="mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-8 p-2">
         {/* Contact Section */}
         <div className="flex flex-col items-start">
           <h3 className="text-2xl font-bold mb-4">Contact Us</h3>
           <p className="text-lg mb-2">
             <FaPhone className="inline-block mr-2" />
-            +250795019913
+            <a href="tel:+250795019913">+250795019913</a>
           </p>
           <p className="text-lg mb-2">
             <FaEnvelope className="inline-block mr-2" />
@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media Links */}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start p-2">
           <h3 className="text-2xl font-bold mb-4">Social Media</h3>
           <div className="space-y-2">
             <a
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start p-2">
           <h3 className="text-2xl font-bold mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li>
@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start p-2">
           <h3 className="text-2xl font-bold mb-4">Newsletter</h3>
           <p className="text-lg mb-4">Get updates on our latest projects!</p>
           <form className="flex flex-col items-start">
