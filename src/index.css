@@ -197,3 +197,46 @@
     transform: rotateY(180deg);
   }
 }
+
+/* Hover effect on navs */
+.nav-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  height: 4px;
+  width: 100%;
+  background-color: #3b82f6; /* Tailwind's blue-500 color */
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Floating icons */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float 5s ease-in-out infinite reverse;
+}

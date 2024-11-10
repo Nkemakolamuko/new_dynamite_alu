@@ -20,11 +20,11 @@ const NavHero = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const links = [
-    { id: 1, path: "/home", display: "Home" },
-    { id: 2, path: "/mission", display: "Mission" },
-    { id: 3, path: "/strength", display: "Strength" },
-    { id: 4, path: "/team", display: "Team" },
-    { id: 5, path: "/gallery", display: "Gallery" },
+    { id: 1, path: "/", display: "Home" },
+    { id: 2, path: "/", display: "Mission" },
+    { id: 3, path: "/", display: "Strength" },
+    { id: 4, path: "/", display: "Team" },
+    { id: 5, path: "/", display: "Gallery" },
     { id: 6, path: "/contact", display: "Contact" },
   ];
 
@@ -93,7 +93,7 @@ const NavHero = () => {
             <Link
               key={link.id}
               to={link.path}
-              className="text-white hover:text-gray-300"
+              className="nav-link hover:text-[#2F36AC] hover:font-semibold transition-all duration-300 ease-in-out"
             >
               {link.display}
             </Link>
@@ -163,29 +163,21 @@ const NavHero = () => {
 
           <p className="flex items-center gap-4">
             <span className="text-gray-300 text-lg">Follow Us:</span>
-            <a
-              href="https://www.facebook.com/DYNAMITEteam"
-              target="_blank"
-              className="text-[#4267B2] hover:text-gray-300"
-            >
+            <a href="/" className="text-[#4267B2] hover:text-gray-300">
               <FaFacebook className="w-6 h-6" />
             </a>
             <a
-              href="https://www.instagram.com/dynamite.team/"
+              href="https://www.instagram.com/dynamitealu/profilecard/?igsh=MTlkOTI5YWx5NmRvYw=="
               target="_blank"
               className="text-[#E1306C] hover:text-gray-300"
             >
               <FaInstagram className="w-6 h-6" />
             </a>
-            <a
-              href="https://twitter.com/DYNAMITEteam"
-              target="_blank"
-              className="text-[#000000] hover:text-gray-300"
-            >
+            <a href="/" className="text-[#000000] hover:text-gray-300">
               <FaXTwitter className="w-6 h-6" />
             </a>
             <a
-              href="https://www.youtube.com/@dynamite.05"
+              href="https://youtube.com/@dynamite.05?feature=shared"
               target="_blank"
               className="text-[#FF0000] hover:text-gray-300"
             >

@@ -5,6 +5,7 @@ import NavHero from "../components/NavHero";
 import Videos from "../components/Videos";
 import AboutTeam from "../components/AboutTeam";
 import Footer from "../components/Footer";
+import SupportUs from "../components/SupportUs";
 
 const LandingPage = () => {
   return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <NavHero />
       <Videos />
       <MissionStatement />
+      <SupportUs />
       <Strength />
       <AboutTeam />
       <Footer />
